@@ -30,7 +30,7 @@ jobs:
       - name: Publish JS filenamej
         id: publish
         run: find dist/assets/*.js -type f -execdir echo 'js-file={}' >> $GITHUB_OUTPUT ';'
-      - name: Uploaad Artifacts
+      - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: dist-files
